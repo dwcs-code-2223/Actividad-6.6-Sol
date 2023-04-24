@@ -33,7 +33,7 @@
 
                                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Regístrese</p>
 
-                                <form class="mx-1 mx-md-4" method="post" action="FrontController.php?controller=Usuario&action=register" id="registerForm" >
+                                <form class="mx-1 mx-md-4" method="post" action="FrontController.php?controller=Usuario&action=register" id="registerForm" novalidate >
 
 
 
@@ -100,4 +100,4 @@
 
 
 </section>
-<script src="../js/register_validation.js" type="text/javascript"></script>
+<!--<script src="../js/register_validation.js" type="text/javascript"></script>-->

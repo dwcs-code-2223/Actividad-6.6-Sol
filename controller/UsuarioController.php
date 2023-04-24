@@ -96,13 +96,17 @@ class UsuarioController {
         $this->page_title = 'Registro de usuario';
         $this->view = self::VIEW_FOLDER . DIRECTORY_SEPARATOR . 'register_user';
 
-        if (isset($_POST["email"]) && isset($_POST["pwd1"]) && isset($_POST["pwd2"])) {
-            $email = $_POST["email"];
-            $pwd = $_POST["pwd1"];
-            $pwd2 = $_POST["pwd2"];     
+//        if (isset($_POST["email"]) && isset($_POST["pwd1"]) && isset($_POST["pwd2"])) {
+//            $email = $_POST["email"];
+//
+//
+//            $pwd = $_POST["pwd1"];
+//            $pwd2 = $_POST["pwd2"];
+//
+//            return $this->usuarioServicio->register($email, $pwd, $pwd2);
+//        }
 
-            return $this->usuarioServicio->register($email, $pwd, $pwd2);
-        }
+       return  $this->usuarioServicio->registerValidUser();
     }
 
 }
