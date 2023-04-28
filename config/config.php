@@ -4,7 +4,7 @@
 
 
 const DEFAULT_CONTROLLER = "Usuario";
-const DEFAULT_ACTION = "register";
+const DEFAULT_ACTION = "login";
 const REGISTER_ACTION="register";
 
 const CONTROLLERS_FOLDER="controller";
