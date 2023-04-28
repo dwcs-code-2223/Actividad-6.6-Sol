@@ -95,7 +95,9 @@ class UsuarioServicio {
 
         $usuario = null;
         $error = "";
-        $pwd_reg_exp = "/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\$@\.\?])(?=.{6,})/";
+        //dentro de los corchetes los únicos metacaracteres son  ^ \ -
+        //https://www.php.net/manual/es/regexp.reference.meta.php
+        $pwd_reg_exp = "/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@.?])(?=.{6,})/";
 
         $email = (filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL));
         $pwd1 = filter_input(INPUT_POST, "pwd1", FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => $pwd_reg_exp)));
